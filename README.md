@@ -1,4 +1,4 @@
-# Data Job Market Analysis
+# Data Job Market Analysis( CV small personal project)
 
 ## Goal of the project
 In modenr Data field, what skill and roles are in demand. A full project from basic analysis to automated pipeline and predictive model.
