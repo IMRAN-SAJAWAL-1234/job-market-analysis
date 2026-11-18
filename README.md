@@ -63,7 +63,7 @@ https://public.tableau.com/app/profile/imran.sajawal/viz/Jobanalysis_17948999525
 - Limitations: one year of data (2023), country labels reflect the search query (Sudan excluded), salary covers about 3% of postings and is mostly US, “no degree mentioned” doesn’t    mean “no degree required.”
 
 
-![chart](da_skills_global_vs_malaysia.png)
+![Dashboard](dashboard/Dashboard%201.png)
 
 
 
