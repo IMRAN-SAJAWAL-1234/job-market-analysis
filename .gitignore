@@ -2,3 +2,12 @@ venv/
 data_jobs_raw.csv
 __pycache__/
 .ipynb_checkpoints/
+jobs.db/
+# Local SQLite databases
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+
+# Python virtual environment
+venv/
