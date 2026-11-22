@@ -69,3 +69,4 @@ https://public.tableau.com/app/profile/imran.sajawal/viz/Jobanalysis_17948999525
 
 
 
+Adzuna returns descriptions truncated to ~500 characters, so only 12% of postings had a detectable skill. Skill percentages from the pipeline are lower bounds and are not comparable with the full-description Stage 1 data.

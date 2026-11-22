@@ -1,0 +1,146 @@
+{
+  "count": 640,
+  "results": [
+    {
+      "location": {
+        "display_name": "Singapore",
+        "__CLASS__": "Adzuna::API::Response::Location",
+        "area": [
+          "Singapore"
+        ]
+      },
+      "contract_time": "full_time",
+      "id": "5937422422",
+      "created": "2026-10-22T12:40:37Z",
+      "title": "Senior Data Analyst",
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNTkzNzQyMjQyMiIsInMiOiI5aDdsWlJuajhSR1hNTlJScFpEaWNRIn0.76gU3ELijwpHzv6_yZNeAra1e1JHD3ZCdqRaCEm8PgM",
+      "redirect_url": "https://www.adzuna.sg/land/ad/5937422422?se=9h7lZRnj8RGXMNRRpZDicQ&utm_medium=api&utm_source=af3c4bac&v=36C8E9A4DEA1FDB4435F2FDB15D53BE0FF89F665",
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "salary_is_predicted": "0",
+      "company": {
+        "display_name": "Robert Half Singapore",
+        "__CLASS__": "Adzuna::API::Response::Company"
+      },
+      "description": "The Company We are supporting a global consulting firm in hiring a Senior Data Analyst to support regional analytics, reporting and business intelligence initiatives across APAC. This is a hands-on, senior-level role combining strong technical expertise in Power BI, data modelling and reporting with a high level of business partnering and stakeholder engagement. You will work directly with senior regional and global stakeholders, translating business requirements into meaningful analytics solut…",
+      "category": {
+        "label": "IT Jobs",
+        "tag": "it-jobs",
+        "__CLASS__": "Adzuna::API::Response::Category"
+      }
+    },
+    {
+      "description": "At Moody's, we unite the brightest minds to turn today's risks into tomorrow's opportunities. We do this by striving to create an inclusive environment where everyone feels welcome to be who they are-with the freedom to exchange ideas, think innovatively, and listen to each other and customers in meaningful ways. Moody's is transforming how the world sees risk. As a global leader in ratings and integrated risk assessment, we're advancing AI to move from insight to action-enabling intelligence t…",
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "company": {
+        "__CLASS__": "Adzuna::API::Response::Company",
+        "display_name": "Moody's"
+      },
+      "salary_is_predicted": "0",
+      "category": {
+        "label": "IT Jobs",
+        "__CLASS__": "Adzuna::API::Response::Category",
+        "tag": "it-jobs"
+      },
+      "id": "5968856447",
+      "created": "2026-11-17T16:32:24Z",
+      "contract_time": "full_time",
+      "location": {
+        "display_name": "Singapore",
+        "__CLASS__": "Adzuna::API::Response::Location",
+        "area": [
+          "Singapore"
+        ]
+      },
+      "redirect_url": "https://www.adzuna.sg/land/ad/5968856447?se=9h7lZRnj8RGXMNRRpZDicQ&utm_medium=api&utm_source=af3c4bac&v=5B54E3C76B7E65A3CC45B31A7725EB1F97965E0F",
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNTk2ODg1NjQ0NyIsInMiOiI5aDdsWlJuajhSR1hNTlJScFpEaWNRIn0.YQoHm086nqlxXKrQzT78i_YRUDWFY0j7J3PMgef7wpk",
+      "title": "Data Analyst - Moody's"
+    },
+    {
+      "description": "Company: 1011 United Overseas Bank Ltd About UOB United Overseas Bank Limited (UOB) is a leading bank in Asia with a global network of more than 500 branches and offices in 19 countries and territories in Asia Pacific, Europe and North America. In Asia, we operate through our head office in Singapore and banking subsidiaries in China, Indonesia, Malaysia and Thailand, as well as branches and offices. Our history spans more than 80 years. Over this time, we have been guided by our values - Honor…",
+      "company": {
+        "display_name": "United Overseas Bank",
+        "__CLASS__": "Adzuna::API::Response::Company"
+      },
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "salary_is_predicted": "0",
+      "category": {
+        "__CLASS__": "Adzuna::API::Response::Category",
+        "tag": "accounting-finance-jobs",
+        "label": "Accounting & Finance Jobs"
+      },
+      "id": "5945422988",
+      "created": "2026-10-29T15:50:31Z",
+      "contract_time": "full_time",
+      "location": {
+        "__CLASS__": "Adzuna::API::Response::Location",
+        "display_name": "Singapore",
+        "area": [
+          "Singapore"
+        ]
+      },
+      "redirect_url": "https://www.adzuna.sg/land/ad/5945422988?se=9h7lZRnj8RGXMNRRpZDicQ&utm_medium=api&utm_source=af3c4bac&v=A0167C25490E681C215CEC236275BD7D16EC83B5",
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNTk0NTQyMjk4OCIsInMiOiI5aDdsWlJuajhSR1hNTlJScFpEaWNRIn0.azs93hYdz6at8OHCxNbyatQevCxNPoqa9Ug01ZIGeos",
+      "title": "Data Analyst - United Overseas Bank"
+    },
+    {
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoiOWg3bFpSbmo4UkdYTU5SUnBaRGljUSIsImkiOiI1OTUwNzA3MjkxIn0.yNTaaUhfbOGPAT3lcJH9cVYyeAX3Hl_KT2JDtXxpSJc",
+      "redirect_url": "https://www.adzuna.sg/land/ad/5950707291?se=9h7lZRnj8RGXMNRRpZDicQ&utm_medium=api&utm_source=af3c4bac&v=AC44E0E0D62C9E12E8356D3D8E130F282E10A312",
+      "title": "Data Analyst - United Overseas Bank",
+      "id": "5950707291",
+      "created": "2026-11-02T23:48:20Z",
+      "location": {
+        "area": [
+          "Singapore"
+        ],
+        "__CLASS__": "Adzuna::API::Response::Location",
+        "display_name": "Singapore"
+      },
+      "contract_time": "full_time",
+      "category": {
+        "__CLASS__": "Adzuna::API::Response::Category",
+        "tag": "accounting-finance-jobs",
+        "label": "Accounting & Finance Jobs"
+      },
+      "description": "Company: 1011 United Overseas Bank Ltd About UOB United Overseas Bank Limited (UOB) is a leading bank in ASEAN with a global network in Southeast Asia, Asia Pacific, Europe and North America. Operating through our head office in Singapore and banking subsidiaries in China, Indonesia, Malaysia, Thailand and Vietnam, we have a global network of about 430 branches and offices in 19 markets. At the heart of UOB is our culture, shaped by the UOB Way and anchored on our four values - Honourable, Ente…",
+      "salary_is_predicted": "0",
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "company": {
+        "display_name": "United Overseas Bank",
+        "__CLASS__": "Adzuna::API::Response::Company"
+      }
+    },
+    {
+      "description": "Start building a career with purpose. At AIA, your perspective, curiosity and ideas can contribute to our Purpose of helping millions of people live Healthier, Longer, Better Lives. Across our diverse markets, you will learn through meaningful work, collaborate with experienced colleagues and build practical skills as you turn fresh ideas into positive outcomes and a more sustainable future for our customers and communities. Join us to explore new possibilities, grow through real experiences an…",
+      "salary_is_predicted": "0",
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "company": {
+        "__CLASS__": "Adzuna::API::Response::Company",
+        "display_name": "AIA SINGAPORE PRIVATE LIMITED"
+      },
+      "category": {
+        "label": "IT Jobs",
+        "__CLASS__": "Adzuna::API::Response::Category",
+        "tag": "it-jobs"
+      },
+      "id": "5947029072",
+      "created": "2026-10-30T22:32:27Z",
+      "location": {
+        "area": [
+          "Singapore"
+        ],
+        "display_name": "Singapore",
+        "__CLASS__": "Adzuna::API::Response::Location"
+      },
+      "contract_time": "full_time",
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNTk0NzAyOTA3MiIsInMiOiI5aDdsWlJuajhSR1hNTlJScFpEaWNRIn0.WAGj7fhEUmBtPupCBurruTEHPk5V76M__nzUfD2nJmg",
+      "contract_type": "contract",
+      "redirect_url": "https://www.adzuna.sg/land/ad/5947029072?se=9h7lZRnj8RGXMNRRpZDicQ&utm_medium=api&utm_source=af3c4bac&v=7AFD59ACF823404F72EE74F67186588E97B74918",
+      "title": "Data Analyst - AIA Singapore Private Limited"
+    }
+  ],
+  "__CLASS__": "Adzuna::API::Response::JobSearchResults",
+  "mean": 2205.5
+}
+
+
+
