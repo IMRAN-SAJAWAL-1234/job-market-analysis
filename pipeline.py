@@ -36,8 +36,10 @@ def check_quality(jobs, skills):
         errors.append("duplicate job_id found")
     if jobs["job_posted_date"].isna().mean() > 0.05:
         errors.append("more than 5% of posted dates failed to parse")
+
     if (jobs["job_posted_date"] > pd.Timestamp.now(tz="UTC")).any():
         errors.append("posted dates in the future")
+
     if set(skills["job_id"]) - set(jobs["job_id"]):
         errors.append("skills reference jobs that don't exist")
 
@@ -67,7 +69,7 @@ def run():
             log.exception("Extract failed for '%s'", q)
     if saved == 0:
         raise RuntimeError("All extractions failed; nothing new to process")
-
+    
     # 2. Transform (re-reads every raw file, so it is safe to re-run)
     rows = [r for f in sorted(transform.RAW_DIR.glob("adzuna_*.json"))
             for r in transform.load_raw(f)]
