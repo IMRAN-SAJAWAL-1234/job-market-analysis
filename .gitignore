@@ -11,7 +11,7 @@ jobs.db/
 
 # Python virtual environment
 venv/
-.env/
+.env
 data/raw/
 data/warehouse.db
 data/
