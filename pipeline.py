@@ -1,3 +1,4 @@
+import argparse
 import logging
 import sys
 from pathlib import Path
@@ -51,25 +52,34 @@ def check_quality(jobs, skills):
             f"salary scale inconsistent (min {sal.min():.0f}, max {sal.max():.0f}); "
             "kept as 'unverified'"
         )
+    cutoff = pd.Timestamp.now(tz="UTC") - pd.Timedelta(days=90)
+    old_share = (jobs["job_posted_date"] < cutoff).mean()
+    if old_share > 0.25:
+        warnings.append(f"{old_share:.0%} of jobs are older than 90 days; check search freshness")
+
     return errors, warnings
 
 
-def run():
+def run(skip_extract=False):
     log.info("Pipeline started | country=%s | queries=%s", COUNTRY, QUERIES)
 
     # 1. Extract
-    saved = 0
-    for q in QUERIES:
-        try:
-            jobs = extract.extract(country=COUNTRY, query=q, pages=PAGES)
-            path = extract.save_raw(jobs, COUNTRY, q)
-            log.info("Extracted %d jobs for '%s' -> %s", len(jobs), q, path.name)
-            saved += 1
-        except Exception:
-            log.exception("Extract failed for '%s'", q)
-    if saved == 0:
-        raise RuntimeError("All extractions failed; nothing new to process")
-    
+        # 1. Extract
+    if skip_extract:
+        log.info("Skipping extract (--skip-extract): re-processing saved raw files")
+    else:
+        saved = 0
+        for q in QUERIES:
+            try:
+                jobs = extract.extract(country=COUNTRY, query=q, pages=PAGES)
+                path = extract.save_raw(jobs, COUNTRY, q)
+                log.info("Extracted %d jobs for '%s' -> %s", len(jobs), q, path.name)
+                saved += 1
+            except Exception:
+                log.exception("Extract failed for '%s'", q)
+        if saved == 0:
+            raise RuntimeError("All extractions failed; nothing new to process")
+
     # 2. Transform (re-reads every raw file, so it is safe to re-run)
     rows = [r for f in sorted(transform.RAW_DIR.glob("adzuna_*.json"))
             for r in transform.load_raw(f)]
@@ -94,8 +104,23 @@ def run():
 
 
 if __name__ == "__main__":
+    parser = argparse.ArgumentParser()
+    parser.add_argument(
+        "--skip-extract",
+        action="store_true",
+        help="re-process saved raw files without calling the API",
+    )
+    args = parser.parse_args()
     try:
-        run()
+        run(skip_extract=args.skip_extract)
     except Exception:
         log.exception("Pipeline failed")
         sys.exit(1)
+
+# if __name__ == "__main__":
+#     try:
+#         run()
+#     except Exception:
+#         log.exception("Pipeline failed")
+#         sys.exit(1)
+

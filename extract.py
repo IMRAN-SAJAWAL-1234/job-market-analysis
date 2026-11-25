@@ -15,6 +15,7 @@ COUNTRY = "sg"
 QUERY = "data analyst"
 PAGES = 2            # each page is one API call, so keep this small
 PER_PAGE = 50
+MAX_DAYS_OLD = 30
 RAW_DIR = Path("data/raw")
 
 
@@ -44,6 +45,7 @@ def extract(country=COUNTRY, query=QUERY, pages=PAGES):
             "app_key": APP_KEY,
             "what": query,
             "results_per_page": PER_PAGE,
+            "max_days_old": MAX_DAYS_OLD,
         }
         response = get_with_retry(url, params)
         results = response.json().get("results", [])

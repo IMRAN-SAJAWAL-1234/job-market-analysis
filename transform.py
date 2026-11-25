@@ -48,6 +48,7 @@ COMPILED = {name: re.compile(p, re.IGNORECASE) for name, p in SKILL_PATTERNS.ite
 ROLES = [
     ("data engineer", "Data Engineer"),
     ("data scientist", "Data Scientist"),
+    ("data science", "Data Scientist"),
     ("data analyst", "Data Analyst"),
     ("business analyst", "Business Analyst"),
     ("machine learning", "Machine Learning Engineer"),
