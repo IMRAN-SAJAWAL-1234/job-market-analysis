@@ -2,6 +2,9 @@ import argparse
 import logging
 import sys
 from pathlib import Path
+import os
+from dotenv import load_dotenv
+load_dotenv()
 
 import pandas as pd
 
@@ -99,7 +102,19 @@ def run(skip_extract=False):
     # 4. Load (dates as text so SQLite stores them cleanly)
     for col in ("job_posted_date", "extracted_at"):
         jobs[col] = jobs[col].dt.strftime("%Y-%m-%dT%H:%M:%SZ")
-    load.load(jobs, skills)
+    # load.load(jobs, skills)
+
+    
+    target = os.getenv("WAREHOUSE", "sqlite").lower()
+    if target == "postgres":
+        import load_pg          # imported here so SQLite mode doesn't need psycopg2
+        load_pg.load(jobs, skills)
+    elif target == "sqlite":
+        load.load(jobs, skills)
+    else:
+        raise RuntimeError(f"Unknown WAREHOUSE setting: {target!r}")
+    log.info("Loaded into %s", target)
+    
     log.info("Pipeline finished OK")
 
 
