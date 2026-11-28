@@ -1,0 +1,10 @@
+.env
+.git
+venv/
+data/
+logs/
+dashboard/
+__pycache__/
+*.ipynb
+*.csv
+*.db
